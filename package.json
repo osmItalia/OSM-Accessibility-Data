@@ -7,8 +7,7 @@
     "query-overpass": "^1.5.5",
     "yargs": "^17.0.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "pull-data": "node fetch-overpass.js"
   }
