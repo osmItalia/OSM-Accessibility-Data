@@ -1,0 +1,26 @@
+[out:json][timeout:25];
+(
+  nw["amenity"="bicycle_parking"]({{bbox}});
+  nw["amenity"="bicycle_repair_station"]({{bbox}});
+  nw["amenity"="bicycle_rental"]({{bbox}});
+  nw["amenity"="boat_rental"]({{bbox}});
+  nw["amenity"="boat_sharing"]({{bbox}});
+  nw["amenity"="bus_station"]({{bbox}});
+  nw["amenity"="car_rental"]({{bbox}});
+  nw["amenity"="car_sharing"]({{bbox}});
+  nw["amenity"="car_wash"]({{bbox}});
+  nw["amenity"="vehicle_inspection"]({{bbox}});
+  nw["amenity"="charging_station"]({{bbox}});
+  nw["amenity"="ferry_terminal"]({{bbox}});
+  nw["amenity"="fuel"]({{bbox}});
+  nw["amenity"="motorcycle_parking"]({{bbox}});
+  nw["amenity"="parking"]({{bbox}});
+  nw["amenity"="parking_entrance"]({{bbox}});
+  nw["amenity"="parking_space"]({{bbox}});
+  nw["amenity"="taxi"]({{bbox}});
+  nw["public_transport"="platform"]({{bbox}});
+  nw["public_transport"="station"]({{bbox}});
+  nw["highway"="bus_stop"]({{bbox}});
+  nw["railway"="platform"]({{bbox}});
+);
+out center;

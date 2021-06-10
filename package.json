@@ -1,0 +1,18 @@
+{
+  "name": "disability-osm-data",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "async": "^3.2.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "query-overpass": "^1.5.5",
+    "querystring": "^0.2.1",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "pull-data": "node scripts/fetch-overpass.js"
+  }
+}
