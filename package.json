@@ -13,6 +13,6 @@
   "devDependencies": {
   },
   "scripts": {
-    "pull-data": "node scripts/fetch-overpass.js"
+    "pull-data": "node fetch-overpass.js"
   }
 }
