@@ -6,14 +6,14 @@
  *
  * optional params:
  * --bbox=45.50,9.17,45.52,9.21     - use a custom bbox
- * --name=transport.ql              - fetch only this file
+ * --name=transport.overpassql              - fetch only this file
  *
  *
  * by default the scripts tries to fetch all the layers
  *
  *
  * NOTE: if you run this script with npm and want to use optional params the correct syntax is:
- * npm run pull-data -- --name=example.ql --bbox=45,9,46,10
+ * npm run pull-data -- --name=example.overpassql --bbox=45,9,46,10
  *
  * * */
 
@@ -66,7 +66,7 @@ const queueManager = queue(async function(task) {
   if (res) {
     postProcess(res);
     await fsPromise.writeFile(
-      `./data/${task.replace('ql', 'geojson')}`,
+      `./data/${task.replace('overpassql', 'geojson')}`,
       JSON.stringify(res),
       'utf8'
     );
@@ -79,7 +79,7 @@ const queueManager = queue(async function(task) {
 async function init() {
   const files = await fsPromise.readdir('./overpass/');
   files
-    .filter(f => f.indexOf('ql') > 0)
+    .filter(f => f.indexOf('overpassql') > 0)
     .forEach(f =>
       queueManager.push(f, e => {
         if (e) {
